@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyoti Tiwari Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a2540, #102f5e);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f7c948;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .hero button {
+      margin-top: 35px;
+      padding: 14px 34px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background: #f7c948;
+      color: #0a2540;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.05);
+      background: #ffd75f;
+    }
+
+    .section {
+      padding: 70px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 45px;
+      color: #0a2540;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #1e3c72;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .about {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 70px;
+    }
+
+    footer p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 { font-size: 34px; }
+      .hero p { font-size: 17px; }
+      header { flex-direction: column; }
+      nav { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="/mnt/data/IMG_7952.PNG" alt="Jyoti Tiwari Academy Logo" />
+  <nav>
+    <a href="#">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Empowering Careers Through Technology</h1>
+  <p>Jyoti Tiwari Academy helps you master Coding, AI, Full Stack Development, and DevOps with real-world career guidance.</p>
+  <button>Start Your Journey</button>
+</section>
+
+<section class="section" id="notice">
+  <div style="background:#fff7db;border-left:6px solid #f7c948;padding:25px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);max-width:900px;margin:0 auto;text-align:center;">
+    <h3 style="color:#0a2540;margin-bottom:10px;">Important Notice</h3>
+    <p style="font-size:15px;line-height:1.7;">
+      This tool is currently under formatting and testing. A downloadable version will be available soon for system use.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="programs">
+  <h2>Our Programs</h2>
+  <div class="cards">
+    <div class="card"><h3>Full Stack Development</h3><p>Build modern, scalable web applications with industry-level projects.</p></div>
+    <div class="card"><h3>Artificial Intelligence</h3><p>Learn AI, ML, and practical implementations used in real companies.</p></div>
+    <div class="card"><h3>DevOps & Cloud</h3><p>Master CI/CD, cloud platforms, and deployment workflows.</p></div>
+    <div class="card"><h3>Career & Interview Prep</h3><p>Resume building, mock interviews, and placement guidance.</p></div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about">
+    <h2>Why Jyoti Tiwari Academy?</h2>
+    <p style="margin-top:20px; font-size:16px; line-height:1.8; text-align:center;">
+      We focus on skill-based learning, real-world exposure, and career transformation.
+      Our mission is to make you industry-ready with confidence and clarity.
+    </p>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>© 2026 Jyoti Tiwari Academy | Designed for Excellence</p>
+</footer>
+
+</body>
+</html>
